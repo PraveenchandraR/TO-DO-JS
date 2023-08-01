@@ -1,0 +1,192 @@
+body{
+    font-family: sans-serif;
+}
+.contener{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.board {
+    flex: 1 0 21%; /* explanation below */
+    margin: 15px;
+    background-color: white;
+    text-align: center;
+    max-width: 20%;
+    border-radius:10px;
+    
+}
+ul{
+    padding-inline-start:0px;
+    list-style: none;
+}
+li{
+    line-height: 25px;
+}
+li.checked{
+    text-decoration: line-through;
+}
+.tasklist{
+    min-height: 200px;
+}
+.board ul li button {
+    color: white;
+    background-color: rgb(50, 188, 108);
+    border-color: #ae842a;
+    border-radius: 20px;
+}
+
+
+button{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#topheader{
+    padding: 20px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topheadertwo{
+    padding: 20px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border-title{
+color: rgb(29, 147, 31);
+}
+.border-footer{
+    font-size: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+.border-footer i{
+    margin: 10px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(165, 142, 142); /* Fallback color */
+    background-color: rgba(120, 101, 101, 0.82);
+}
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  input{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-radius: 5px;
+    border-color: rgb(50, 203, 152) !important;
+  }
+
+  .modal-content button {
+    padding: 10px;
+    width: 25%;
+    border-radius: 20px;
+    color: rgb(96, 89, 89);
+    background-color: rgb(28, 182, 134);
+    border-color: rgb(31, 177, 128);
+    font-size: 20px;
+}
+
+.modal-content p{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: sans-serif;
+     color:rgb(0, 139, 113)
+}
+
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(213, 135, 135);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .fa-trash-o{
+    width: 25px;
+    background-color: rgb(11, 197, 148);
+    color: rgb(132, 139, 137);
+    padding: 6px;
+    border-radius: 100px;
+    height: 25px;
+  }
+  .fa-plus{
+    width: 25px;
+    background-color: rgb(165, 36, 126);
+    color: rgba(223, 223, 92, 0.44);
+    padding: 6px;
+    border-radius: 100px;
+    height: 25px;
+  }
+
+
+ @media screen and (min-width:279px) and (max-width:768px){
+    .contener {
+        display: flex;
+        flex-direction: column;
+    }
+    .board {
+        margin: 60px;
+        max-width: 100%;
+    }.modal-content {
+        
+        padding: 20px;
+        border: 1px solid rgb(138, 118, 3);
+        width: 70%;
+        
+    }
+ } 
+
+ /* @media screen and (min-width:768px){
+    .contener {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .board {
+        flex: 1 0 21%;
+        margin: 60px;
+        background-color: white;
+        text-align: center;
+        max-width: 30%;
+        border-radius: 10px;
+    }
+ } */
